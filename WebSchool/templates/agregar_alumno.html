@@ -1,0 +1,15 @@
+{% extends "otro.html" %}
+
+{%block content%}
+  <h1>Agregar un nuevo Alumno</h1>
+  <div class="panel panel-default">
+    <div class="panel-body">
+  <form class="" action="" method="POST">{% csrf_token %}
+    <label for="">Nuevo Alumno</label>
+    {{form.as_p}}
+    <input type="submit" name="" value="Registrar Alumno" class='btn btn-primary'>
+
+  </form>
+</div>
+</div>
+{%endblock%}

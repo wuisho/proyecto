@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{%extends "tablas.html"%}
+
+{%block content%}
+
+     {%for alum in object_list%}
+       <tr>
+        <td>{{alum.id}}</td>
+        <td>{{alum.Matricula}}</td>
+        <td>{{alum.Nombre}}</td>
+        <td>{{alum.Curso}}</td>
+        <td>{{alum.Calificacion}}</td>
+       </tr>
+
+  {%empty%}
+    <h1>{{alum.slug}}</h1>
+  {%endfor%}
+
+{%endblock%}

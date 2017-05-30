@@ -1,0 +1,18 @@
+{%extends 'tablas.html'%}
+
+{%block content%}
+  {%for alumnos in Alumnos%}
+  <tr>
+    <td>{{alumnos.Matricula}}</td>
+
+    <td>{{alumnos.Nombres}}</td>
+
+    <td>{{alumnos.Curso}}</td>
+
+    <td>{{alumnos.Puntuacion}}</td>
+  </tr>
+  {%empty%}
+    <h1>No hay registros!</h1>
+
+  {%endfor%}
+{%endblock %}
